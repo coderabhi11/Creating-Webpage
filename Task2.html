@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 2  : Making a Form</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+</head>
+<body>
+    
+
+
+<div class="form">
+    
+   <div class="nav">
+    <span style="text-align: center; margin-left: 100px;">    Form</span>
+   </div>
+    <br>
+   <label for="exampleInputEmail1" class="form-label"   style="text-align: center;" >   Enter  Name </label>
+   
+   <input type="text" class="form-control" id="input" aria-describedby="NameHelp" placeholder="Enter Name Here ">
+
+
+    
+    <!-- <input type="text" placeholder="Enter a Name here " style="text-align: center;"> -->
+ 
+      
+       <div class="container">
+        <input class="btn btn-primary" type="submit" value="Submit" style="text-align: center;" onclick="addValue()">
+
+
+        </div>
+   
+
+</div>
+
+
+
+
+<!-- Internal Css  -->
+
+<style>
+
+   .nav
+   {
+    height: 30px;
+    width: 270px;
+    border: green;
+    background-color: green;
+    text-align: center;
+   }
+
+
+    .form
+
+    {
+        height: 240px;
+        width: 270px;
+        border: 1px solid black;
+        margin: auto;
+        padding-top: auto;
+        justify-content: center;
+        margin-top: 150px;
+        background-color: azure;
+        
+    }
+
+    label{
+        margin-left: 5px;
+    }
+
+
+.container
+{
+    text-align: center;
+    margin-top: 45%;
+
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #253745;
+}
+
+span{
+
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+
+}
+
+
+
+
+</style>
+
+<script>
+
+
+
+let btn=document.querySelector('.btn-primary');
+let i= document.getElementById('#input');
+
+
+btn.addEventListener("click" , function()
+{
+
+// print();
+submit();
+
+});
+
+// function print()
+// {
+   
+//         // alert('Congrats Your Form is Submited ');
+
+//         input();
+
+
+        
+
+// }
+
+
+
+function addValue()
+
+{
+
+ var inputValue=document.getElementById("input").value;
+
+
+    if(inputValue =="" )
+    {
+        alert("Please enter a Name");
+    }
+    else 
+    {
+        alert("Your name is Enterd");
+
+        var inputValue=document.getElementById("input").value= "";
+
+        
+    }
+
+}
+
+
+
+
+
+
+</script>
+
+
+</body>
+</html>
